@@ -19,7 +19,7 @@ class App extends Component {
     this.setState({ renderBall: true });
   }
   handleKeyDown(event) {
-    if (event.keycode === 39) {
+    if (event.key === "ArrowRight") {
       let value = this.state.posi + 5;
       this.setState({ ballPosition: { left: value + "px" }, posi: value });
     }
